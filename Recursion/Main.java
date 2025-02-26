@@ -10,7 +10,10 @@ public class Main {
         Example2 array = new Example2();
         array.printArray(array1, 0);
 
-        Example3 reverseArray = new Example3();
-        reverseArray.printArray(array1, 10);
+        Example3 reverseArray1 = new Example3();
+        reverseArray1.printArray(array1, 10);
+
+        Example3 reverseArray2 = new Example3();
+        reverseArray2.printArray(array1, 10);
     }
 }
