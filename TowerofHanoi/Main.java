@@ -1,5 +1,3 @@
-package TowerofHanoi;
-
 public class Main {
     public static void main(String[] args) {
         Moves moves = new Moves();

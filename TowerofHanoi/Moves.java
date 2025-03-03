@@ -1,13 +1,11 @@
-package TowerofHanoi;
-
-public class Moves{
-    public int count(int n, char t1, char t2, char t3) {
+public class Moves {
+    public void count(int n, char from, char to, char aux) {
         if (n == 1) {
-            return 1;
+            System.out.println("Move disk 1 from rod " + from + " to rod " + to);
+            return;
         }
-        int step1 = count(n-1, t1, t3, t2);
-        int step2 = 1;
-        int step3 = count(n-1, t3, t2, t1);
-        return step1 + step2 + step3;
+        count(n - 1, from, aux, to);
+        System.out.println("Move disk " + n + " from rod " + from + " to rod " + to);
+        count(n - 1, aux, to, from);
     }
 }
